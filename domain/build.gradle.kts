@@ -1,21 +1,11 @@
-//plugins {
-//    kotlin("jvm")
-//}
-//
-//group = "nsus.payment"
-//version = ""0.0.1""
-//
-//repositories {
-//    mavenCentral()
-//}
+tasks.getByName("bootJar") {
+    enabled = false
+}
+
+tasks.getByName("jar") {
+    enabled = true
+}
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
-
-//tasks.test {
-//    useJUnitPlatform()
-//}
-//kotlin {
-//    jvmToolchain(17)
-//}
